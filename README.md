@@ -11,3 +11,7 @@
    5.2 Add Products Images
    5.3 Render Products
    5.4 Style Products
+6. Add Router
+   6.1 npm i react-router-dom
+   6.2 create route for homescreen
+   6.3 Create Router for product screen
