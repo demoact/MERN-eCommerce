@@ -13,7 +13,7 @@ const data = {
       description: 'high quality shirts',
     },
     {
-      name: 'Nike slim shirt 2',
+      name: 'Nike slim shirt',
       slug: 'nike-slim-shirt-2',
       category: 'shirts',
       image: '/images/p2.jpg',
@@ -25,7 +25,7 @@ const data = {
       description: 'high quality shirts',
     },
     {
-      name: 'Nike slim shirt 3',
+      name: 'Adidas fit shirt',
       slug: 'nike-slim-shirt-3',
       category: 'shirts',
       image: '/images/p3.jpg',
@@ -37,7 +37,7 @@ const data = {
       description: 'high quality shirts',
     },
     {
-      name: 'Nike slim shirt 4',
+      name: 'Nike slim pant',
       slug: 'nike-slim-shirt-4',
       category: 'shirts',
       image: '/images/p4.jpg',
