@@ -50,7 +50,7 @@ function ProductScreen() {
   ) : error ? (
     <div>{error}</div>
   ) : (
-    <Container className="mt-3">
+    <div>
       <Row>
         <Col md={6}>
           <img className="img-large" src={product.image} alt={product.name} />
