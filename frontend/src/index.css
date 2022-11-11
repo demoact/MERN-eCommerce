@@ -100,3 +100,7 @@ form#mc-embedded-subscribe-form {
   padding: 0px;
   margin: 0px;
 }
+
+.img-thumbnail {
+  height: 80px;
+}
