@@ -20,7 +20,7 @@ function Footer() {
                 name="mc-embedded-subscribe-form"
                 className="validate"
                 target="_blank"
-                novalidate
+                noValidate
               >
                 <div id="mc_embed_signup_scroll">
                   <h2>Subscribe</h2>
@@ -28,7 +28,7 @@ function Footer() {
                     <span className="asterisk">*</span> indicates required
                   </div>
                   <div className="mc-field-group">
-                    <label for="mce-EMAIL">
+                    <label htmlFor="mce-EMAIL">
                       Email Address <span className="asterisk">*</span>
                     </label>
                     <input
@@ -64,7 +64,7 @@ function Footer() {
                     <input
                       type="text"
                       name="b_db6edbfa30ee8790072aa07d3_f8b4228fb5"
-                      tabindex="-1"
+                      tabIndex="-1"
                       value=""
                     />
                   </div>
@@ -132,14 +132,16 @@ function Footer() {
           </Col>
         </Row>
       </Container>
-      <Row>
-        <Col md={5}>
-          <div className="copyright text-center">All rights reserved</div>
-        </Col>
-        <Col md={7}>
-          <SocialLinks />
-        </Col>
-      </Row>
+      <div className="bottom">
+        <Row>
+          <Col md={5}>
+            <div className="copyright text-center">All rights reserved</div>
+          </Col>
+          <Col md={7}>
+            <SocialLinks />
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 }

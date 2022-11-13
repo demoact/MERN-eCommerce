@@ -5,7 +5,7 @@ function ProductSlider(props) {
   return (
     <Carousel>
       {products.map((product) => (
-        <Carousel.Item>
+        <Carousel.Item key={product.slug}>
           <img
             className="d-block w-100"
             src={product.slideImage}

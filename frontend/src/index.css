@@ -15,6 +15,10 @@ main {
   flex: 1;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 .btn-primary {
   background-color: #f0c040;
   color: #000;
@@ -68,6 +72,10 @@ footer {
   padding: 10px;
 }
 
+footer .bottom .row {
+  width: 100%;
+}
+
 footer ul.useful-links {
   list-style: none;
   margin: 0;
@@ -103,4 +111,8 @@ form#mc-embedded-subscribe-form {
 
 .img-thumbnail {
   height: 80px;
+}
+
+.small-container {
+  max-width: 600px;
 }

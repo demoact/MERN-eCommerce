@@ -53,7 +53,7 @@ function HomeScreen() {
       </Helmet>
       <ProductSlider products={products}></ProductSlider>
       <Container className="mt-3">
-        <h1>Featured products</h1>
+        <h1>Featured Products</h1>
         <div className="products">
           {loading ? (
             <LoadingBox />
