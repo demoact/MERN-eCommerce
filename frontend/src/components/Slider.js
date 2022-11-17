@@ -12,7 +12,10 @@ function ProductSlider(props) {
             alt={product.name}
           />
           <Carousel.Caption>
-            <h3>{product.name}</h3>
+            <h3>
+              {product.name}
+              {console.log(product)}
+            </h3>
             <p>{product.description}</p>
           </Carousel.Caption>
         </Carousel.Item>

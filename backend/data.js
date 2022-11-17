@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
 const data = {
+  users: [
+    {
+      name: 'Komal',
+      email: 'admin@gmail.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: true,
+    },
+    {
+      name: 'Kamlesh',
+      email: 'kamleshsaini@gmail.com',
+      password: bcrypt.hashSync('123456'),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
+      // _id: '1',
       name: 'Nike slim shirt',
       slug: 'nike-slim-shirt',
       category: 'shirts',
@@ -15,7 +30,7 @@ const data = {
       description: 'High quality nike shirts',
     },
     {
-      _id: '2',
+      // _id: '2',
       name: 'Nike slim girls T-shirts',
       slug: 'nike-slim-girls-tshirt',
       category: 't-shirts',
@@ -29,7 +44,7 @@ const data = {
       description: 'High quality nike t-shirts',
     },
     {
-      _id: '3',
+      // _id: '3',
       name: 'Adidas fit pants',
       slug: 'adidas-slim-fit-pants',
       category: 'pants',
@@ -43,7 +58,7 @@ const data = {
       description: 'High quality adidas pants',
     },
     {
-      _id: '4',
+      // _id: '4',
       name: 'Adidas slim t-shirts',
       slug: 'adidas-slim-tshirts',
       category: 't-shirts',
