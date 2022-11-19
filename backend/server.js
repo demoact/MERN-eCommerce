@@ -24,6 +24,7 @@ app.use('/api/seed', seedRouter);
 
 // send products into listing
 app.use('/api/products', productRouter);
+
 app.use('/api/users', userRouter);
 
 app.use((err, req, res, next) => {
