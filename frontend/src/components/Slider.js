@@ -8,7 +8,7 @@ function ProductSlider(props) {
         <Carousel.Item key={product.slug}>
           <img
             className="d-block w-100"
-            src={product.slideImage}
+            src={product.image}
             alt={product.name}
           />
           <Carousel.Caption>

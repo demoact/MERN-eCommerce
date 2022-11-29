@@ -1,5 +1,27 @@
 import bcrypt from 'bcryptjs';
 const data = {
+  sliders: [
+    {
+      name: 'Nike slim shirt',
+      slug: 'nike-slim-shirt',
+      image: '/images/slider/slider1.png',
+    },
+    {
+      name: 'Nike slim girls T-shirts',
+      slug: 'nike-slim-girls-tshirt',
+      image: '/images/slider/slider2.png',
+    },
+    {
+      name: 'Adidas fit pants',
+      slug: 'adidas-slim-fit-pants',
+      image: '/images/slider/slider3.png',
+    },
+    {
+      name: 'Adidas slim t-shirts',
+      slug: 'adidas-slim-tshirts',
+      image: '/images/slider/slider4.png',
+    },
+  ],
   users: [
     {
       name: 'Komal',

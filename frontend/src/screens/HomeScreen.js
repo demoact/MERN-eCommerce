@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 import axios from 'axios';
 import logger from 'use-reducer-logger';
 import Row from 'react-bootstrap/Row';
@@ -31,7 +31,6 @@ function HomeScreen() {
     error: '',
   });
 
-  // const [products, setProducts] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       dispatch({ type: 'FETCH_REQUEST' });
@@ -46,12 +45,23 @@ function HomeScreen() {
     };
     fetchData();
   }, []);
+
+  const [sliders, setSliders] = useState([]);
+  useEffect(() => {
+    const fetchsData = async () => {
+      const result = await axios.get('/api/sliders');
+      setSliders(result.data);
+      console.log(sliders);
+    };
+    fetchsData();
+  }, []);
+
   return (
     <div>
       <Helmet>
         <title>Amazona</title>
       </Helmet>
-      <ProductSlider products={products}></ProductSlider>
+      <ProductSlider products={sliders}></ProductSlider>
       <Container className="mt-3">
         <h1>Featured Products</h1>
         <div className="products">
