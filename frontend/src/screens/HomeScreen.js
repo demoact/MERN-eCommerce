@@ -51,7 +51,6 @@ function HomeScreen() {
     const fetchsData = async () => {
       const result = await axios.get('/api/sliders');
       setSliders(result.data);
-      console.log(sliders);
     };
     fetchsData();
   }, []);
