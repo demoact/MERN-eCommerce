@@ -6,6 +6,7 @@ import seedRouter from './router/seedRoutes.js';
 import productRouter from './router/productRoutes.js';
 import userRouter from './router/userRoutes.js';
 import sliderRouter from './router/sliderRoutes.js';
+import orderRouter from './router/orderRoutes.js';
 
 dotenv.config();
 mongoose
@@ -28,6 +29,7 @@ app.use('/api/products', productRouter);
 
 app.use('/api/users', userRouter);
 app.use('/api/sliders', sliderRouter);
+app.use('/api/orders', orderRouter);
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
