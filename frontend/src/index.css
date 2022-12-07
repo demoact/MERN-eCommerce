@@ -22,6 +22,7 @@ h1 {
 .btn-primary {
   background-color: #f0c040;
   color: #000;
+  border: 1px solid #d2a030;
 }
 
 .products {
@@ -125,4 +126,12 @@ form#mc-embedded-subscribe-form {
 .checkout-steps > div.active {
   border-bottom: 0.2rem solid #f08000;
   color: #f08000;
+}
+
+#contact-form .row {
+  margin-bottom: 10px;
+}
+
+.my-image {
+  width: 100%;
 }

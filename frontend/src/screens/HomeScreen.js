@@ -58,7 +58,7 @@ function HomeScreen() {
   return (
     <div>
       <Helmet>
-        <title>Amazona</title>
+        <title>Hacraft</title>
       </Helmet>
       <ProductSlider products={sliders}></ProductSlider>
       <Container className="mt-3">
