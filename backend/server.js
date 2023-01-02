@@ -29,16 +29,10 @@ app.get('/api/keys/paypal', (req, res) => {
 app.use('/api/seed', seedRouter);
 
 // send products into listing
-app.use(
-  'https://mern-ecommerce-app-07lm.onrender.com/api/products',
-  productRouter
-);
+app.use('/api/products', productRouter);
 
 app.use('/api/users', userRouter);
-app.use(
-  'https://mern-ecommerce-app-07lm.onrender.com/api/sliders',
-  sliderRouter
-);
+app.use('/api/sliders', sliderRouter);
 app.use('/api/orders', orderRouter);
 
 app.use((err, req, res, next) => {
