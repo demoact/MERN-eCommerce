@@ -49,7 +49,7 @@ function HomeScreen() {
   const [sliders, setSliders] = useState([]);
   useEffect(() => {
     const fetchsData = async () => {
-      const result = await axios.get('/api/sliders');
+      const result = await axios.get('gh/api/sliders');
       setSliders(result.data);
     };
     fetchsData();
