@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "proxy": "https://mern-ecommerce-app-07lm.onrender.com:10000",
+  "proxy": "https://mern-ecommerce-app-07lm.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
