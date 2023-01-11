@@ -1,8 +1,8 @@
 import path from 'path';
+import { fileURLToPath } from 'url';
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import data from './data.js';
 import seedRouter from './router/seedRoutes.js';
 import productRouter from './router/productRoutes.js';
 import userRouter from './router/userRoutes.js';
@@ -45,7 +45,9 @@ app.listen(port, () => {
   console.log(`Serve at the port http://localhost:${port}`);
 });
 
-const __dirname = path.resolve(path.dirname(''));
+const filename = fileURLToPath(import.meta.url);
+
+const __dirname = path.dirname(filename);
 // Have Node serve the files for our built React app
 app.use(express.static(path.resolve(__dirname, '../frontend/build')));
 
