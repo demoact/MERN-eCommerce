@@ -4,7 +4,7 @@ import Product from '../models/productModel.js';
 const productRouter = express.Router();
 
 productRouter.get(
-  'https://mern-ecommerce-app-07lm.onrender.com/',
+  'https://mern-ecommerce-app-07lm.onrender.com:10000/',
   async (req, res) => {
     const products = await Product.find();
     res.send(products);
@@ -14,7 +14,7 @@ productRouter.get(
 // send single product
 
 productRouter.get(
-  'https://mern-ecommerce-app-07lm.onrender.com/slug/:slug',
+  'https://mern-ecommerce-app-07lm.onrender.com:10000/slug/:slug',
   async (req, res) => {
     const product = await Product.findOne({ slug: req.params.slug });
     if (product) {
@@ -26,7 +26,7 @@ productRouter.get(
 );
 
 productRouter.get(
-  'https://mern-ecommerce-app-07lm.onrender.com/:id',
+  'https://mern-ecommerce-app-07lm.onrender.com:10000/:id',
   async (req, res) => {
     const product = await Product.findById(req.params.id);
     if (product) {

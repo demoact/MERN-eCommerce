@@ -36,7 +36,7 @@ function HomeScreen() {
       dispatch({ type: 'FETCH_REQUEST' });
       try {
         const result = await axios.get(
-          'https://mern-ecommerce-app-07lm.onrender.com/api/products'
+          'https://mern-ecommerce-app-07lm.onrender.com:10000/api/products'
         );
         dispatch({ type: 'FETCH_SUCCESS', payload: result.data });
       } catch (err) {
@@ -52,7 +52,7 @@ function HomeScreen() {
   useEffect(() => {
     const fetchsData = async () => {
       const result = await axios.get(
-        'https://mern-ecommerce-app-07lm.onrender.com/api/sliders'
+        'https://mern-ecommerce-app-07lm.onrender.com:10000/api/sliders'
       );
       setSliders(result.data);
     };
